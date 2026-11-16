@@ -1,0 +1,4 @@
+content/
+.nuxt
+.output
+.data

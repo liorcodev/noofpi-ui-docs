@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: noofpi-ui-docs
+
+    steps:
+      - name: Checkout docs
+        uses: actions/checkout@v4
+        with:
+          path: noofpi-ui-docs
+
+      - name: Checkout noofpi-ui
+        uses: actions/checkout@v4
+        with:
+          repository: liorcodev/noofpi-ui
+          path: noofpi-ui
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install noofpi-ui dependencies
+        run: bun install
+        working-directory: noofpi-ui
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build static site
+        run: bun run generate
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-build
+          path: noofpi-ui-docs/.output/public
+          retention-days: 7
