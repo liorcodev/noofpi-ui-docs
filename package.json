@@ -16,7 +16,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "better-sqlite3": "^12.11.1",
     "fuse.js": "^7.5.0",
-    "noofpi-ui": "file:../noofpi-ui",
+    "noofpi-ui": "^1.0.1",
     "nuxt": "^4.6.2",
     "tailwindcss": "^4.3.3",
     "zod": "^4.6.7"

@@ -1,14 +1,17 @@
 # noofpi-ui-docs
 
-Documentation site for [noofpi-ui](https://www.npmjs.com/package/noofpi-ui), Tailwind (v4) components for [noofpi](https://www.npmjs.com/package/noofpi).
+Documentation site for [noofpi-ui](https://www.npmjs.com/package/noofpi-ui), Tailwind (v4)
+components for [noofpi](https://www.npmjs.com/package/noofpi).
 
 Live site: https://liorcodev.github.io/noofpi-ui-docs/
 
-Built with [Nuxt](https://nuxt.com) and [Nuxt Content](https://content.nuxt.com), and deployed to GitHub Pages.
+Built with [Nuxt](https://nuxt.com) and [Nuxt Content](https://content.nuxt.com), and deployed to
+GitHub Pages.
 
 ## Development
 
-`noofpi-ui` is installed from the sibling `../noofpi-ui` folder, so clone both repos side by side.
+`noofpi-ui` is installed from npm (`^1.0.1`), so the docs show the published components. To try
+local changes, temporarily point it at a sibling checkout with `"noofpi-ui": "file:../noofpi-ui"`.
 
 ```sh
 bun install
@@ -34,7 +37,8 @@ bun run format     Format with Prettier
 
 ## Deployment
 
-Pushing to `main` runs `.github/workflows/deploy.yml`, which generates the site and publishes it to GitHub Pages.
+Pushing to `main` runs `.github/workflows/deploy.yml`, which generates the site and publishes it to
+GitHub Pages.
 
 ## Related
 
