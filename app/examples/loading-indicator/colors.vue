@@ -1,7 +1,15 @@
 <script setup lang="ts">
 import type { ButtonColor } from 'noofpi-ui';
 
-const colors: ButtonColor[] = ['primary', 'neutral', 'success', 'info', 'warning', 'error'];
+const colors: ButtonColor[] = [
+  'primary',
+  'secondary',
+  'neutral',
+  'success',
+  'info',
+  'warning',
+  'error'
+];
 const color = ref<ButtonColor>('success');
 const loading = ref(false);
 

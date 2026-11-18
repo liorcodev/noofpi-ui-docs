@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const colors = ['primary', 'neutral', 'success', 'info', 'warning', 'error'] as const;
+const colors = ['primary', 'secondary', 'neutral', 'success', 'info', 'warning', 'error'] as const;
 const variants = ['solid', 'outline', 'soft', 'subtle'] as const;
 </script>
 
