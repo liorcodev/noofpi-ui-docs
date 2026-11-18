@@ -1,6 +1,7 @@
 export interface DocsNavItem {
   title: string;
   slug: string;
+  versions?: string[];
 }
 
 export interface DocsNavGroup {
@@ -29,7 +30,8 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Progress', slug: 'components/progress' },
       { title: 'Card & Stat', slug: 'components/card' },
       { title: 'Data List', slug: 'components/data-list' },
-      { title: 'Marquee', slug: 'components/marquee' }
+      { title: 'Marquee', slug: 'components/marquee' },
+      { title: 'Empty State', slug: 'components/empty-state', versions: ['v1.1.0'] }
     ]
   },
   {
@@ -62,7 +64,8 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Combobox', slug: 'forms/combobox' },
       { title: 'Calendar', slug: 'forms/calendar' },
       { title: 'Date Picker', slug: 'forms/date-picker' },
-      { title: 'Auth Form', slug: 'forms/auth-form' }
+      { title: 'Auth Form', slug: 'forms/auth-form' },
+      { title: 'File Upload', slug: 'forms/file-upload', versions: ['v1.1.0'] }
     ]
   },
   {
@@ -73,7 +76,8 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Breadcrumb', slug: 'navigation/breadcrumb' },
       { title: 'Stepper', slug: 'navigation/stepper' },
       { title: 'Pagination', slug: 'navigation/pagination' },
-      { title: 'Accordion', slug: 'navigation/accordion' }
+      { title: 'Accordion', slug: 'navigation/accordion' },
+      { title: 'Command Palette', slug: 'navigation/command-palette', versions: ['v1.1.0'] }
     ]
   },
   {
@@ -84,6 +88,7 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Skeleton', slug: 'feedback/skeleton' },
       { title: 'Dialog', slug: 'feedback/dialog' },
       { title: 'Drawer', slug: 'feedback/drawer' },
+      { title: 'Tooltip', slug: 'feedback/tooltip', versions: ['v1.1.0'] },
       { title: 'Scroll To Top', slug: 'feedback/scroll-to-top' },
       { title: 'Loading Indicator', slug: 'feedback/loading-indicator' }
     ]

@@ -10,7 +10,7 @@ GitHub Pages.
 
 ## Development
 
-`noofpi-ui` is installed from npm (`^1.0.1`), so the docs show the published components. To try
+`noofpi-ui` is installed from npm (`^1.1.0`), so the docs show the published components. To try
 local changes, temporarily point it at a sibling checkout with `"noofpi-ui": "file:../noofpi-ui"`.
 
 ```sh

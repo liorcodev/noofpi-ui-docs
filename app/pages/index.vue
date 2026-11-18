@@ -112,7 +112,7 @@ const groups = [
   {
     title: 'Feedback',
     to: '/docs/feedback/toast',
-    items: ['Toast', 'Alert', 'Skeleton', 'Scroll To Top', 'Loading Indicator']
+    items: ['Toast', 'Alert', 'Tooltip', 'Skeleton', 'Scroll To Top', 'Loading Indicator']
   }
 ];
 
@@ -133,7 +133,7 @@ const stats = [
     <section class="relative flex flex-col items-center justify-center px-4 pt-24 pb-28 sm:pt-32">
       <div class="grid-bg absolute inset-0" />
       <div
-        class="absolute -top-24 left-1/2 -translate-x-1/2 w-[60rem] h-[28rem] rounded-full bg-brand-400/20 blur-3xl"
+        class="absolute -top-24 left-1/2 -translate-x-1/2 w-240 h-112 rounded-full bg-brand-400/20 blur-3xl"
       />
 
       <div class="relative z-10 max-w-5xl mx-auto text-center">
@@ -141,7 +141,7 @@ const stats = [
           to="/docs/installation"
           class="animate-fade-up inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full text-xs font-semibold bg-surface border border-line-strong text-body hover:border-brand-400 transition-colors shadow-sm"
         >
-          <span class="px-2 py-0.5 rounded-full bg-accent-soft text-accent">v1.0.1</span>
+          <span class="px-2 py-0.5 rounded-full bg-accent-soft text-accent">v1.1.0</span>
           Made for noofpi
           <Icon name="heroicons:arrow-right" class="text-accent" />
         </NuxtLink>

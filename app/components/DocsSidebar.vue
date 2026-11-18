@@ -7,10 +7,12 @@ const versionOpen = ref(false);
 const navigation = computed(() =>
   DOCS_NAV.map(section => ({
     ...section,
-    items: section.items.map(item => ({
-      ...item,
-      to: `/docs/${currentVersion.value}/${item.slug}`
-    }))
+    items: section.items
+      .filter(item => !item.versions || item.versions.includes(currentVersion.value))
+      .map(item => ({
+        ...item,
+        to: `/docs/${currentVersion.value}/${item.slug}`
+      }))
   }))
 );
 
@@ -21,7 +23,11 @@ function switchVersion(v: string) {
   sessionStorage.setItem(STORAGE_KEY, v);
   const segments = route.path.split('/').filter(Boolean);
   const pagePath = segments.slice(2).join('/');
-  navigateTo(`/docs/${v}/${pagePath || 'introduction'}`);
+  const item = DOCS_NAV.flatMap(section => section.items).find(
+    candidate => candidate.slug === pagePath
+  );
+  const available = !item?.versions || item.versions.includes(v);
+  navigateTo(`/docs/${v}/${available ? pagePath || 'introduction' : 'introduction'}`);
 }
 </script>
 

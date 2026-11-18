@@ -219,6 +219,11 @@ body {
   background: var(--accent-soft);
   transform: translateY(-1px);
 }
+.n-button[data-variant='soft'] {
+  --n-bg: var(--n-tint);
+  --n-bg-hover: var(--n-tint-hover);
+  --n-bg-active: var(--n-tint-active);
+}
 kbd {
   font-family: var(--font-mono);
 }
