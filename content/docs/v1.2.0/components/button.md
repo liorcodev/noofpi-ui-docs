@@ -7,7 +7,8 @@ description: A button with variants, colors, sizes, shapes, icons and responsive
 
 A button for actions and navigation. It renders a `<button>`, or a link with `as="a"`.
 
-::component-example{name="button/variants"} ::
+::component-example{name="button/variants"}
+::
 
 ## Variants
 
@@ -19,17 +20,20 @@ progressively stronger without reaching the visual weight of a solid button.
 `color` accepts the `primary` color of your theme and the semantic colors. It works with every
 variant.
 
-::component-example{name="button/colors"} ::
+::component-example{name="button/colors"}
+::
 
 ## Sizes
 
 Seven sizes from `xxs` to `xxl`.
 
-::component-example{name="button/sizes"} ::
+::component-example{name="button/sizes"}
+::
 
 ## Shapes
 
-::component-example{name="button/shapes"} ::
+::component-example{name="button/shapes"}
+::
 
 A button without a label is a square around its icon, or a circle with `shape="circle"`. Give it an
 `aria-label`.
@@ -39,26 +43,30 @@ A button without a label is a square around its icon, or a circle with `shape="c
 Use `icon` for a leading icon and `trailingIcon` for a trailing one. They accept an Iconify class,
 any other class, or a Vue component. See [Icons](/docs/icons).
 
-::component-example{name="button/icons"} ::
+::component-example{name="button/icons"}
+::
 
 ## Loading
 
 `loading` replaces the leading icon with a spinner and disables the button.
 
-::component-example{name="button/loading"} ::
+::component-example{name="button/loading"}
+::
 
 ## As a link
 
 Use `as` to render another element or a component such as `NoofpiLink`.
 
-::component-example{name="button/as-link"} ::
+::component-example{name="button/as-link"}
+::
 
 ## Responsive
 
 `size`, `shape` and `block` take a value per Tailwind breakpoint. It is mobile first, and `base` is
 below `sm`. Resize the window to see this one change.
 
-::component-example{name="button/responsive"} ::
+::component-example{name="button/responsive"}
+::
 
 ## API
 

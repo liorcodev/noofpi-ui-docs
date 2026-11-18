@@ -31,7 +31,8 @@ Plain CSS after the import. You can also scope it to a subtree, as in the live e
 }
 ```
 
-::component-example{name="theming/override"} ::
+::component-example{name="theming/override"}
+::
 
 | Variable            | Description                                                                         |
 | ------------------- | ----------------------------------------------------------------------------------- |
@@ -47,7 +48,8 @@ Plain CSS after the import. You can also scope it to a subtree, as in the live e
 The shades are also Tailwind colors, so `bg-primary-500`, `text-primary-700` and
 `border-primary-300` work anywhere in your app.
 
-::component-example{name="theming/utilities"} ::
+::component-example{name="theming/utilities"}
+::
 
 Component styles live in `@layer components`, so any Tailwind utility on the element, such as
 `class="rounded-full"`, wins.

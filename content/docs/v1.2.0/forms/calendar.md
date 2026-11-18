@@ -9,7 +9,8 @@ An inline month calendar. Dates are `YYYY-MM-DD` strings, so they are safe to st
 compare. Bind a single date with `v-model`. For a dropdown version, see
 [NDatePicker](/docs/forms/date-picker).
 
-::component-example{name="calendar/basic" height="400px"} ::
+::component-example{name="calendar/basic" height="400px"}
+::
 
 ## Range
 
@@ -17,7 +18,8 @@ With `range`, the `v-model` is a `DateRange` of `{ start, end }`. The first clic
 `end` becomes `null`), the second completes the range; picking an earlier date swaps the ends. While
 a range is half picked, hovering previews it.
 
-::component-example{name="calendar/range" height="430px"} ::
+::component-example{name="calendar/range" height="430px"}
+::
 
 ## Limits
 

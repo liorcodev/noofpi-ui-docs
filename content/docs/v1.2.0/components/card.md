@@ -8,47 +8,54 @@ description: A content container and a statistic block.
 `NCard` is a container with optional media, header and footer sections. `NStat` shows a labeled
 number with an icon and a trend.
 
-::component-example{name="card/basic"} ::
+::component-example{name="card/basic"}
+::
 
 ## Variants
 
 `variant` sets the visual style. The default is `outline`.
 
-::component-example{name="card/variants"} ::
+::component-example{name="card/variants"}
+::
 
 ## Colors
 
 `color` tints the variant. It defaults to `neutral`, and it affects the border, background and
 header and footer dividers.
 
-::component-example{name="card/colors"} ::
+::component-example{name="card/colors"}
+::
 
 ## Media
 
 The `media` slot renders edge to edge above the padded content. Put an image or a video in it, which
 is stretched to fill the width.
 
-::component-example{name="card/media"} ::
+::component-example{name="card/media"}
+::
 
 ## As a link
 
 Use `as` to render another element, for example a clickable card with `as="a"`.
 
-::component-example{name="card/as-link"} ::
+::component-example{name="card/as-link"}
+::
 
 ## Stat
 
 `NStat` shows a `label`, a `value` and a `description`. `icon` adds a tinted tile, and `trend` adds
 an arrow and colors the description. Put it in an `NCard` for a boxed look.
 
-::component-example{name="card/stat"} ::
+::component-example{name="card/stat"}
+::
 
 ## Stat slots
 
 The `label`, default and `description` slots replace the matching text, and `icon` replaces the
 tile.
 
-::component-example{name="card/stat-slots"} ::
+::component-example{name="card/stat-slots"}
+::
 
 ## API
 

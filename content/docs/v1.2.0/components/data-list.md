@@ -9,40 +9,46 @@ Label and value rows with a line between them, for facts and settings that don't
 label is muted at the start and the value emphasized at the end, so it follows right-to-left
 layouts. Put it in an `NCard` for a boxed look.
 
-::component-example{name="data-list/basic"} ::
+::component-example{name="data-list/basic"}
+::
 
 ## Sizes
 
 `size` changes the row padding and the font size.
 
-::component-example{name="data-list/sizes"} ::
+::component-example{name="data-list/sizes"}
+::
 
 ## Dividers
 
 Rows are separated by a line. Set `divided` to `false` to remove it.
 
-::component-example{name="data-list/divided"} ::
+::component-example{name="data-list/divided"}
+::
 
 ## Icon and color
 
 `icon` shows a tinted tile before the `title`. `color` tints the tile. `icon` accepts an Iconify
 class, any other class, or a Vue component. See [Icons](/docs/icons).
 
-::component-example{name="data-list/icon-color"} ::
+::component-example{name="data-list/icon-color"}
+::
 
 ## Custom cells
 
 The `label` and `value` slots replace the content of every row and receive the `item` and its
 `index`.
 
-::component-example{name="data-list/slots"} ::
+::component-example{name="data-list/slots"}
+::
 
 ## Extra rows
 
 The default slot renders after the rows of `items`. Use the `n-data-list-row`, `n-data-list-label`
 and `n-data-list-value` classes on a `div`, `dt` and `dd` to match the rest.
 
-::component-example{name="data-list/extra-rows"} ::
+::component-example{name="data-list/extra-rows"}
+::
 
 ## API
 

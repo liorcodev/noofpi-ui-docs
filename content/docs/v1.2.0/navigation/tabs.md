@@ -8,7 +8,8 @@ description: Accessible tabs and panels.
 Tabs and their panels. `v-model` is the `value` of the selected tab, and the first enabled tab is
 selected by default.
 
-::component-example{name="tabs/basic"} ::
+::component-example{name="tabs/basic"}
+::
 
 Each panel is the slot named after the `value` of its tab. Tabs without such a slot use the `panel`
 slot, which gets `{ item }`. Only the selected panel is rendered.
@@ -17,40 +18,46 @@ slot, which gets `{ item }`. Only the selected panel is rendered.
 
 `line` underlines the selected tab. `pill` highlights it on a filled track.
 
-::component-example{name="tabs/variants"} ::
+::component-example{name="tabs/variants"}
+::
 
 ## Orientation
 
 `orientation="vertical"` stacks the tabs next to their panel. Arrow keys switch to up and down.
 
-::component-example{name="tabs/vertical"} ::
+::component-example{name="tabs/vertical"}
+::
 
 ## Icons and disabled tabs
 
 A tab can have an `icon`, an Iconify class or a component. See [Icons](/docs/icons). A tab with
 `disabled` can't be selected or focused.
 
-::component-example{name="tabs/icons"} ::
+::component-example{name="tabs/icons"}
+::
 
 ## Label slot
 
 The `label` slot replaces the content of a tab and gets `{ item, selected }`.
 
-::component-example{name="tabs/label-slot"} ::
+::component-example{name="tabs/label-slot"}
+::
 
 ## Activation
 
 With `automatic`, a tab is selected as soon as arrow keys focus it. With `manual`, focus moves first
 and `Enter` or `Space` selects. Try both with the keyboard.
 
-::component-example{name="tabs/activation"} ::
+::component-example{name="tabs/activation"}
+::
 
 ## Keep alive
 
 Panels unmount when they are not selected. `keepAlive` keeps the panels of visited tabs mounted and
 hidden, which preserves their state.
 
-::component-example{name="tabs/keep-alive"} ::
+::component-example{name="tabs/keep-alive"}
+::
 
 ## Accessibility
 

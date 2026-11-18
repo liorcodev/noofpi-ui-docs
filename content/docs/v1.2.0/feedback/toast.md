@@ -9,7 +9,8 @@ Mount `NToaster` once, for example in `app.vue`, then call `toast.add` from anyw
 `useToast()` are the same object, and neither is auto-imported by `noofpi-ui/vite`, so import them
 from `noofpi-ui`.
 
-::component-example{name="toast/basic"} ::
+::component-example{name="toast/basic"}
+::
 
 The examples on this page each include an `NToaster` to be self-contained. The docs show one toaster
 at a time, so toasts never appear twice.
@@ -19,26 +20,30 @@ at a time, so toasts never appear twice.
 `color` sets the accent. `success`, `info`, `warning` and `error` come with a matching icon, which
 `icon` replaces. `error` and `warning` toasts have `role="alert"`, the others `role="status"`.
 
-::component-example{name="toast/colors"} ::
+::component-example{name="toast/colors"}
+::
 
 ## Actions
 
 `actions` adds buttons under the text. Each one takes any `NButton` prop plus an `onClick` handler.
 
-::component-example{name="toast/actions"} ::
+::component-example{name="toast/actions"}
+::
 
 ## Updating a toast
 
 `toast.add` returns the toast with its `id`. Pass it to `toast.update` to change the toast, and its
 timer starts over. Use `duration: 0` to keep a toast until it is closed.
 
-::component-example{name="toast/update"} ::
+::component-example{name="toast/update"}
+::
 
 ## Position
 
 `NToaster` places toasts at one of six positions.
 
-::component-example{name="toast/position"} ::
+::component-example{name="toast/position"}
+::
 
 ## Behavior
 

@@ -7,42 +7,49 @@ description: An image with an initials or icon fallback.
 
 An image with a fallback: text, the initials of `alt`, or an icon.
 
-::component-example{name="avatar/basic"} ::
+::component-example{name="avatar/basic"}
+::
 
 ## Fallback
 
 If `src` is missing or fails to load, the fallback is shown. It is `text` if set, otherwise the
 initials of `alt` (`Jane Mary Doe` becomes `JD`), otherwise an icon.
 
-::component-example{name="avatar/fallback"} ::
+::component-example{name="avatar/fallback"}
+::
 
 ## Sizes
 
 Seven sizes from `xxs` to `xxl`.
 
-::component-example{name="avatar/sizes"} ::
+::component-example{name="avatar/sizes"}
+::
 
 ## Shapes
 
-::component-example{name="avatar/shapes"} ::
+::component-example{name="avatar/shapes"}
+::
 
 ## Colors
 
 `color` tints the fallback background and text, and the border.
 
-::component-example{name="avatar/colors"} ::
+::component-example{name="avatar/colors"}
+::
 
 ## Bordered
 
 `bordered` adds a border in the `color` of the avatar.
 
-::component-example{name="avatar/bordered"} ::
+::component-example{name="avatar/bordered"}
+::
 
 ## Group
 
 Overlap bordered avatars with a negative space utility.
 
-::component-example{name="avatar/group"} ::
+::component-example{name="avatar/group"}
+::
 
 ## Accessibility
 

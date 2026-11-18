@@ -8,24 +8,28 @@ description: A persistent message with a title, an icon and actions.
 An inline banner for messages that stay on the page, unlike a [toast](/docs/feedback/toast). It
 takes a `title` and a `description`, and picks an icon from the `color`.
 
-::component-example{name="alert/basic"} ::
+::component-example{name="alert/basic"}
+::
 
 ## Colors
 
 `success`, `info`, `warning` and `error` get a matching icon. `primary` and `neutral` have none, so
 set `icon` if you want one.
 
-::component-example{name="alert/colors"} ::
+::component-example{name="alert/colors"}
+::
 
 ## Variants
 
-::component-example{name="alert/variants"} ::
+::component-example{name="alert/variants"}
+::
 
 ## Icons
 
 `icon` takes an Iconify class or a component. The `leading` slot replaces it entirely.
 
-::component-example{name="alert/icons"} ::
+::component-example{name="alert/icons"}
+::
 
 ## Actions and closing
 
@@ -33,7 +37,8 @@ set `icon` if you want one.
 plus an `onClick` handler. `close` adds a close button that emits `close`. The alert does not hide
 itself, so remove it with `v-if`.
 
-::component-example{name="alert/actions"} ::
+::component-example{name="alert/actions"}
+::
 
 ## Accessibility
 

@@ -8,28 +8,32 @@ description: Pick a number from a range by dragging a thumb.
 A slider for a number between `min` and `max`. `v-model` is a `number`. It is a native
 `<input type="range">`, so the arrow keys, Home, End, PageUp and PageDown work.
 
-::component-example{name="slider/basic"} ::
+::component-example{name="slider/basic"}
+::
 
 ## Range and step
 
 `min` and `max` set the range (`0` to `100` by default) and `step` the increment. The `value` slot
 formats the shown value.
 
-::component-example{name="slider/range-step"} ::
+::component-example{name="slider/range-step"}
+::
 
 ## Colors and sizes
 
 `color` takes the same colors as `NButton`, and `size` is `sm`, `md` or `lg`. `disabled` is a native
 attribute.
 
-::component-example{name="slider/colors-sizes"} ::
+::component-example{name="slider/colors-sizes"}
+::
 
 ## Form field
 
 Inside an `NFormField` the slider gets the `id`, `aria-invalid` and `aria-describedby`, and the
 field shows the schema error. See [NFormField](/docs/forms/input).
 
-::component-example{name="slider/form-field"} ::
+::component-example{name="slider/form-field"}
+::
 
 ## Accessibility
 

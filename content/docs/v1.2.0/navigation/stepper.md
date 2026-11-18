@@ -8,11 +8,13 @@ description: Shows the steps of a multi-step flow and where the user is.
 Pass `items` and bind `v-model` to the index of the current step, starting at `0`. Earlier steps are
 complete, and the stepper does not move on by itself, so change the model from your own buttons.
 
-::component-example{name="stepper/basic"} ::
+::component-example{name="stepper/basic"}
+::
 
 ## Vertical
 
-::component-example{name="stepper/vertical"} ::
+::component-example{name="stepper/vertical"}
+::
 
 ## Icons
 
@@ -20,11 +22,13 @@ complete, and the stepper does not move on by itself, so change the model from y
 `true` by default, so a completed step is a button that goes back to it. Set it to `false` to lock
 the steps.
 
-::component-example{name="stepper/icons"} ::
+::component-example{name="stepper/icons"}
+::
 
 ## Sizes
 
-::component-example{name="stepper/sizes"} ::
+::component-example{name="stepper/sizes"}
+::
 
 ## Accessibility
 

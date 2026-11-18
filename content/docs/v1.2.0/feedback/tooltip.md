@@ -8,13 +8,15 @@ description: Beautiful, accessible hints with automatic viewport-aware placement
 Wrap a button, icon, link, or any focusable control with a concise contextual hint. Tooltips open on
 hover or keyboard focus and close with `Escape`.
 
-::component-example{name="tooltip/basic"} ::
+::component-example{name="tooltip/basic"}
+::
 
 ## Variants
 
 Use `solid` for high-contrast hints and `soft` for a lighter, color-matched treatment.
 
-::component-example{name="tooltip/variants"} ::
+::component-example{name="tooltip/variants"}
+::
 
 ## Content
 

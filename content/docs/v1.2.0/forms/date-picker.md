@@ -9,11 +9,13 @@ A trigger that opens an [NCalendar](/docs/forms/calendar) below it. The value is
 string, or a `{ start, end }` range with `range`. The popover closes once a date, or a complete
 range, is chosen.
 
-::component-example{name="date-picker/basic" height="420px"} ::
+::component-example{name="date-picker/basic" height="420px"}
+::
 
 ## Range
 
-::component-example{name="date-picker/range" height="420px"} ::
+::component-example{name="date-picker/range" height="420px"}
+::
 
 ## Limits
 
@@ -21,7 +23,8 @@ range, is chosen.
 the week. `format` takes `Intl.DateTimeFormat` options for the text in the trigger, and `locale` the
 language.
 
-::component-example{name="date-picker/limits" height="420px"} ::
+::component-example{name="date-picker/limits" height="420px"}
+::
 
 ## In a form field
 
@@ -29,7 +32,8 @@ Inside an `NFormField`, the trigger carries the field's `id`, `aria-invalid` and
 Use `name` to submit the value with a surrounding `form` through a hidden input; with `range` it
 submits `<name>-start` and `<name>-end`.
 
-::component-example{name="date-picker/in-field" height="480px"} ::
+::component-example{name="date-picker/in-field" height="480px"}
+::
 
 ## Keyboard
 

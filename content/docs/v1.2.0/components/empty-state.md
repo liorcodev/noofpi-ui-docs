@@ -7,7 +7,8 @@ description: Polished guidance for empty, first-run, and no-result screens.
 
 Give users a clear next step when a list, dashboard, or search has no content.
 
-::component-example{name="empty-state/basic"} ::
+::component-example{name="empty-state/basic"}
+::
 
 ## Content
 

@@ -9,7 +9,8 @@ A full-width progress bar fixed to the top of the page, with a gradient, a shimm
 head. Mount it once, for example in `app.vue`. Without props it runs until the page finishes
 loading. Drive it yourself for route changes and fetches.
 
-::component-example{name="loading-indicator/basic"} ::
+::component-example{name="loading-indicator/basic"}
+::
 
 The bar is fixed to the top of the viewport, so look at the top of this page when you press the
 button. `loading` set to `true` starts the bar and it trickles toward 92%. Set to `false`, it
@@ -21,13 +22,15 @@ completes and fades out.
 `100` completes the bar. These examples share the top of the page, so complete this one before
 trying another.
 
-::component-example{name="loading-indicator/value"} ::
+::component-example{name="loading-indicator/value"}
+::
 
 ## Colors
 
 `color` accepts the `primary` color of your theme and the semantic colors.
 
-::component-example{name="loading-indicator/colors"} ::
+::component-example{name="loading-indicator/colors"}
+::
 
 ## API
 

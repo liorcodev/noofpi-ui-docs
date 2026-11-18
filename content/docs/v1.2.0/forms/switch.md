@@ -8,13 +8,15 @@ description: An on/off toggle bound to a boolean.
 A toggle for a setting that applies right away. `v-model` is a `boolean`. It is a native checkbox
 with `role="switch"`, so it works with the keyboard (Space) and with `<form>`.
 
-::component-example{name="switch/basic"} ::
+::component-example{name="switch/basic"}
+::
 
 ## Colors and sizes
 
 `color` takes the same colors as `NButton`, and `size` is `sm`, `md` or `lg`.
 
-::component-example{name="switch/colors-sizes"} ::
+::component-example{name="switch/colors-sizes"}
+::
 
 ## Custom label
 
@@ -24,14 +26,16 @@ The default slot replaces `label`, so the label can hold markup such as a link.
 
 `disabled` is a native attribute, and `invalid` marks the switch without an `NFormField`.
 
-::component-example{name="switch/states"} ::
+::component-example{name="switch/states"}
+::
 
 ## Form field
 
 Inside an `NFormField` the switch gets the `id`, `aria-invalid` and `aria-describedby`, and the
 field shows the schema error. See [NFormField](/docs/forms/input).
 
-::component-example{name="switch/form-field"} ::
+::component-example{name="switch/form-field"}
+::
 
 ## API
 

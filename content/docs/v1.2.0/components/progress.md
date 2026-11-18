@@ -7,42 +7,49 @@ description: A determinate or indeterminate progress bar.
 
 A progress bar. Without a `value` it is indeterminate and shows an animation.
 
-::component-example{name="progress/basic"} ::
+::component-example{name="progress/basic"}
+::
 
 ## Value
 
 `value` goes from `0` to `max`.
 
-::component-example{name="progress/value"} ::
+::component-example{name="progress/value"}
+::
 
 ## Max
 
 `max` defaults to `100`. The value is clamped between `0` and `max`, and the percentage is rounded.
 
-::component-example{name="progress/max"} ::
+::component-example{name="progress/max"}
+::
 
 ## Indeterminate
 
 Omit `value` when the duration is unknown. `showValue` has no effect in this state.
 
-::component-example{name="progress/indeterminate"} ::
+::component-example{name="progress/indeterminate"}
+::
 
 ## Colors
 
-::component-example{name="progress/colors"} ::
+::component-example{name="progress/colors"}
+::
 
 ## Sizes
 
 Four sizes from `xs` to `lg`.
 
-::component-example{name="progress/sizes"} ::
+::component-example{name="progress/sizes"}
+::
 
 ## Slots usage
 
 The `label` slot replaces the label, and `value` replaces the percentage. It receives the clamped
 `value` and the `percent`.
 
-::component-example{name="progress/slots"} ::
+::component-example{name="progress/slots"}
+::
 
 ## Accessibility
 

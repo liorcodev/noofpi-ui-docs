@@ -8,43 +8,50 @@ description: A dot or count pinned to a corner of the content it wraps.
 A dot or count pinned to a corner of whatever it wraps, such as a notification marker on a button or
 an avatar.
 
-::component-example{name="chip/basic"} ::
+::component-example{name="chip/basic"}
+::
 
 ## Colors
 
-::component-example{name="chip/colors"} ::
+::component-example{name="chip/colors"}
+::
 
 ## Sizes
 
 Seven sizes from `xxs` to `xxl`. Without `text` the chip is a dot of that size, and a chip with text
 is 1.5 times as tall.
 
-::component-example{name="chip/sizes"} ::
+::component-example{name="chip/sizes"}
+::
 
 ## Position
 
 `position` picks the corner. It defaults to `top-right`.
 
-::component-example{name="chip/position"} ::
+::component-example{name="chip/position"}
+::
 
 ## Text and content
 
 `text` shows a short string or number. The `content` slot replaces it, for example with an icon.
 
-::component-example{name="chip/text"} ::
+::component-example{name="chip/text"}
+::
 
 ## Inset
 
 By default the chip is centered on the corner and overflows the content. `inset` keeps it inside the
 content box, which is useful when a parent clips overflow.
 
-::component-example{name="chip/inset"} ::
+::component-example{name="chip/inset"}
+::
 
 ## Showing and hiding
 
 `show` toggles the chip without removing the wrapped content.
 
-::component-example{name="chip/show"} ::
+::component-example{name="chip/show"}
+::
 
 ## Accessibility
 

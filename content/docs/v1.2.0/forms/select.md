@@ -8,34 +8,39 @@ description: An accessible dropdown select with single and multiple modes.
 A dropdown list of options from `items`. The trigger is a `role="combobox"` button and the list is a
 `listbox`, so it is fully keyboard and screen reader friendly.
 
-::component-example{name="select/basic" height="320px"} ::
+::component-example{name="select/basic" height="320px"}
+::
 
 ## Multiple
 
 With `multiple`, the `v-model` is an array of values and the list stays open while you pick. The
 chosen options stay checked in the list and the trigger shows their labels joined with commas.
 
-::component-example{name="select/multiple" height="320px"} ::
+::component-example{name="select/multiple" height="320px"}
+::
 
 ## Badges
 
 With `multiple`, add `badges` to show the chosen options as badges, wrapping onto more lines. Style
 them with `badgeVariant` and `badgeColor`; an `icon` of the item shows in its badge.
 
-::component-example{name="select/badges" height="320px"} ::
+::component-example{name="select/badges" height="320px"}
+::
 
 ## Icons and descriptions
 
 An item can have an `icon` and a `description`. The icon also shows in the trigger.
 
-::component-example{name="select/icons-descriptions" height="320px"} ::
+::component-example{name="select/icons-descriptions" height="320px"}
+::
 
 ## Item slot
 
 The `item` slot replaces the content of every option and of the trigger. It receives the `item` and
 whether it is `selected`. With `multiple` it only applies to the list.
 
-::component-example{name="select/item-slot" height="320px"} ::
+::component-example{name="select/item-slot" height="320px"}
+::
 
 ## In a form field
 
@@ -43,14 +48,16 @@ Inside an `NFormField`, the trigger carries the field's `id`, `aria-invalid` and
 Use `name` to submit the value with a surrounding `form` through a hidden input; with `multiple` it
 submits one input per value.
 
-::component-example{name="select/in-field" height="360px"} ::
+::component-example{name="select/in-field" height="360px"}
+::
 
 ## Disabled and invalid
 
 Use `invalid` to mark a select invalid outside an `NFormField`. When there is no field label, give
 it a `label` as its accessible name.
 
-::component-example{name="select/states"} ::
+::component-example{name="select/states"}
+::
 
 ## Keyboard
 

@@ -7,26 +7,30 @@ description: A small label for statuses, counts and categories.
 
 A small label for statuses, counts and categories. It renders a `<span>`, or any element with `as`.
 
-::component-example{name="badge/variants"} ::
+::component-example{name="badge/variants"}
+::
 
 ## Colors
 
 `color` accepts the `primary` color of your theme and the semantic colors. It works with every
 variant.
 
-::component-example{name="badge/colors"} ::
+::component-example{name="badge/colors"}
+::
 
 ## Sizes
 
 Five sizes from `xs` to `xl`.
 
-::component-example{name="badge/sizes"} ::
+::component-example{name="badge/sizes"}
+::
 
 ## Pill
 
 `pill` fully rounds the ends.
 
-::component-example{name="badge/pill"} ::
+::component-example{name="badge/pill"}
+::
 
 ## Icons
 
@@ -34,19 +38,22 @@ Use `icon` for a leading icon and `trailingIcon` for a trailing one. They accept
 any other class, or a Vue component. See [Icons](/docs/icons). A badge without a label is just its
 icon.
 
-::component-example{name="badge/icons"} ::
+::component-example{name="badge/icons"}
+::
 
 ## As a link
 
 Use `as` to render another element or a component, such as an `a`.
 
-::component-example{name="badge/as-link"} ::
+::component-example{name="badge/as-link"}
+::
 
 ## Slots usage
 
 The `leading` and `trailing` slots replace the icons, and the default slot replaces `label`.
 
-::component-example{name="badge/slots"} ::
+::component-example{name="badge/slots"}
+::
 
 ## API
 

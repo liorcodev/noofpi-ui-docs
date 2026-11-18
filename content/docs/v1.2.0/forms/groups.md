@@ -8,14 +8,16 @@ description: Groups of checkboxes or radios from a list of items.
 Groups of options rendered inside a `fieldset` from a list of `items`. `NCheckboxGroup` lets you
 check several options, `NRadioGroup` exactly one.
 
-::component-example{name="groups/checkbox-group"} ::
+::component-example{name="groups/checkbox-group"}
+::
 
 ## Radio group
 
 The `v-model` of `NRadioGroup` is the `value` of the selected item. The radios share a generated
 `name`, or the one you pass.
 
-::component-example{name="groups/radio-group"} ::
+::component-example{name="groups/radio-group"}
+::
 
 ## Buttons
 
@@ -23,27 +25,31 @@ The `v-model` of `NRadioGroup` is the `value` of the selected item. The radios s
 `NButton` for radios. `color`, `size`, `variant` and `checkedVariant` style the buttons, and
 `description` is ignored.
 
-::component-example{name="groups/buttons"} ::
+::component-example{name="groups/buttons"}
+::
 
 ## Orientation
 
 Options are stacked by default. Use `orientation="horizontal"` to lay them in a row.
 
-::component-example{name="groups/orientation"} ::
+::component-example{name="groups/orientation"}
+::
 
 ## Disabled
 
 Disable a single option with `disabled` on its item, or the whole group with `disabled` on the
 component.
 
-::component-example{name="groups/disabled"} ::
+::component-example{name="groups/disabled"}
+::
 
 ## In a form field
 
 Inside an `NFormField`, the group carries the field's `id`, `aria-invalid` and `aria-describedby`,
 and takes its invalid state from the field. Outside a field, use `invalid`.
 
-::component-example{name="groups/in-field"} ::
+::component-example{name="groups/in-field"}
+::
 
 ## API
 

@@ -8,7 +8,8 @@ description: Page navigation with a collapsing list of pages.
 Page buttons with previous and next. `v-model` is the current page, starting at `1`. Give it the
 `total` number of items and the `pageSize`, and it works out the pages.
 
-::component-example{name="pagination/basic"} ::
+::component-example{name="pagination/basic"}
+::
 
 ## Many pages
 
@@ -17,18 +18,21 @@ one, and `boundaries` the number always shown at the start and the end. The numb
 the same while paging, so they do not shift. `showEdges` adds buttons for the first and the last
 page.
 
-::component-example{name="pagination/many-pages"} ::
+::component-example{name="pagination/many-pages"}
+::
 
 ## Sizes
 
-::component-example{name="pagination/sizes"} ::
+::component-example{name="pagination/sizes"}
+::
 
 ## With a table
 
 Place it in the `footer` slot of [NTable](/docs/data/table). Slice the rows yourself, or load the
 page on `update:modelValue`.
 
-::component-example{name="pagination/table"} ::
+::component-example{name="pagination/table"}
+::
 
 ## Accessibility
 

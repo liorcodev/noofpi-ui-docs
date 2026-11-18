@@ -7,33 +7,38 @@ description: A title with a description and an icon tile.
 
 A page title with a description and an icon in a gradient tile.
 
-::component-example{name="page-header/basic"} ::
+::component-example{name="page-header/basic"}
+::
 
 ## Sizes
 
 `size` scales the tile, the title and the description. On narrow screens the header shrinks further
 on its own.
 
-::component-example{name="page-header/sizes"} ::
+::component-example{name="page-header/sizes"}
+::
 
 ## Colors
 
 `color` sets the color of the icon tile.
 
-::component-example{name="page-header/colors"} ::
+::component-example{name="page-header/colors"}
+::
 
 ## Actions
 
 The `actions` slot is pushed to the end of the row. Use it for buttons.
 
-::component-example{name="page-header/actions"} ::
+::component-example{name="page-header/actions"}
+::
 
 ## Custom slots
 
 Replace the tile, the title or the description with the `icon`, `title` and `description` slots. The
 `icon` slot takes any content, such as an avatar.
 
-::component-example{name="page-header/slots"} ::
+::component-example{name="page-header/slots"}
+::
 
 ## API
 
