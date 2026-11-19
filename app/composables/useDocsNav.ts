@@ -31,7 +31,11 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Card & Stat', slug: 'components/card' },
       { title: 'Data List', slug: 'components/data-list' },
       { title: 'Marquee', slug: 'components/marquee' },
-      { title: 'Empty State', slug: 'components/empty-state', versions: ['v1.1.0'] }
+      {
+        title: 'Empty State',
+        slug: 'components/empty-state',
+        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0']
+      }
     ]
   },
   {
@@ -46,7 +50,10 @@ export const DOCS_NAV: DocsNavGroup[] = [
   },
   {
     group: 'Data',
-    items: [{ title: 'Table', slug: 'data/table' }]
+    items: [
+      { title: 'Table', slug: 'data/table' },
+      { title: 'File Explorer', slug: 'data/file-explorer', versions: ['v1.4.0'] }
+    ]
   },
   {
     group: 'Forms',
@@ -65,19 +72,29 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Calendar', slug: 'forms/calendar' },
       { title: 'Date Picker', slug: 'forms/date-picker' },
       { title: 'Auth Form', slug: 'forms/auth-form' },
-      { title: 'File Upload', slug: 'forms/file-upload', versions: ['v1.1.0'] }
+      {
+        title: 'File Upload',
+        slug: 'forms/file-upload',
+        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0']
+      }
     ]
   },
   {
     group: 'Navigation',
     items: [
       { title: 'Menu', slug: 'navigation/menu' },
+      { title: 'Context Menu', slug: 'navigation/context-menu', versions: ['v1.4.0'] },
+      { title: 'Tree', slug: 'navigation/tree', versions: ['v1.4.0'] },
       { title: 'Tabs', slug: 'navigation/tabs' },
       { title: 'Breadcrumb', slug: 'navigation/breadcrumb' },
       { title: 'Stepper', slug: 'navigation/stepper' },
       { title: 'Pagination', slug: 'navigation/pagination' },
       { title: 'Accordion', slug: 'navigation/accordion' },
-      { title: 'Command Palette', slug: 'navigation/command-palette', versions: ['v1.1.0'] }
+      {
+        title: 'Command Palette',
+        slug: 'navigation/command-palette',
+        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0']
+      }
     ]
   },
   {
@@ -88,7 +105,12 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Skeleton', slug: 'feedback/skeleton' },
       { title: 'Dialog', slug: 'feedback/dialog' },
       { title: 'Drawer', slug: 'feedback/drawer' },
-      { title: 'Tooltip', slug: 'feedback/tooltip', versions: ['v1.1.0'] },
+      {
+        title: 'Tooltip',
+        slug: 'feedback/tooltip',
+        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0']
+      },
+      { title: 'Popover', slug: 'feedback/popover', versions: ['v1.4.0'] },
       { title: 'Scroll To Top', slug: 'feedback/scroll-to-top' },
       { title: 'Loading Indicator', slug: 'feedback/loading-indicator' }
     ]

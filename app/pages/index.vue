@@ -102,17 +102,25 @@ const groups = [
   {
     title: 'Data',
     to: '/docs/data/table',
-    items: ['Table']
+    items: ['Table', 'File Explorer']
   },
   {
     title: 'Navigation',
     to: '/docs/navigation/menu',
-    items: ['Menu', 'Tabs', 'Accordion']
+    items: ['Menu', 'Context Menu', 'Tabs', 'Tree', 'Accordion']
   },
   {
     title: 'Feedback',
     to: '/docs/feedback/toast',
-    items: ['Toast', 'Alert', 'Tooltip', 'Skeleton', 'Scroll To Top', 'Loading Indicator']
+    items: [
+      'Toast',
+      'Alert',
+      'Tooltip',
+      'Popover',
+      'Skeleton',
+      'Scroll To Top',
+      'Loading Indicator'
+    ]
   }
 ];
 
@@ -141,7 +149,7 @@ const stats = [
           to="/docs/installation"
           class="animate-fade-up inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full text-xs font-semibold bg-surface border border-line-strong text-body hover:border-brand-400 transition-colors shadow-sm"
         >
-          <span class="px-2 py-0.5 rounded-full bg-accent-soft text-accent">v1.3.0</span>
+          <span class="px-2 py-0.5 rounded-full bg-accent-soft text-accent">v1.4.0</span>
           Made for noofpi
           <Icon name="heroicons:arrow-right" class="text-accent" />
         </NuxtLink>
