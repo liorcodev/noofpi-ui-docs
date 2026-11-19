@@ -100,6 +100,7 @@ function upload(incoming: File[], folder?: FileItem) {
 
 <template>
   <NFileExplorer
+    style="--n-file-explorer-nav-w: 10rem"
     v-model:current="current"
     v-model:selected="selected"
     :items="files"

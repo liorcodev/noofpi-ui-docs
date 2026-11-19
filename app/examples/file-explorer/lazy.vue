@@ -17,7 +17,10 @@ async function loadChildren(folder: FileItem): Promise<FileItem[]> {
       value: `${folder.value}-reports`,
       label: 'reports',
       type: 'folder',
-      description: 'Loaded when opened'
+      // Has `children`, so it isn't loaded again
+      children: [
+        { value: `${folder.value}-q4`, label: 'q4.csv', size: 8120, modified: '2026-11-19' }
+      ]
     },
     { value: `${folder.value}-guide`, label: 'guide.md', size: 2600, modified: '2026-11-19' }
   ];
@@ -39,6 +42,7 @@ function onLoad(folder: FileItem, children: FileItem[]) {
 
 <template>
   <NFileExplorer
+    style="--n-file-explorer-nav-w: 10rem"
     v-model:current="current"
     v-model:view="view"
     :items="files"

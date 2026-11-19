@@ -228,6 +228,28 @@ kbd {
   font-family: var(--font-mono);
 }
 
+/* Mirrors the toolbar fix of the next noofpi-ui release: the buttons wrap instead of being cut off */
+.example-preview.not-prose.not-prose.not-prose {
+  .n-file-explorer-tools {
+    min-width: 0;
+    max-width: 100%;
+    flex: 0 1 auto;
+    margin-inline-start: auto;
+  }
+  .n-file-explorer-selection {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 40rem) {
+    .n-file-explorer-crumbs,
+    .n-file-explorer-tools {
+      flex-basis: 100%;
+    }
+    .n-file-explorer-tools {
+      justify-content: flex-start;
+    }
+  }
+}
+
 /* ── Code blocks ─────────────────────────────────────── */
 .prose pre {
   margin: 1.5rem 0;
