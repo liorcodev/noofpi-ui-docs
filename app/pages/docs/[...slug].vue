@@ -17,6 +17,8 @@ const { data: page } = await useAsyncData('docs-' + route.path, async () => {
   return null;
 });
 
+const pageAdded = DOCS_NAV.flatMap(g => g.items).find(i => i.slug === pageSlug)?.added;
+
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true });
 }
@@ -27,7 +29,10 @@ useHead({
 </script>
 
 <template>
-  <article class="prose">
-    <ContentRenderer v-if="page" :value="page" />
-  </article>
+  <div>
+    <NewBadge :added="pageAdded" />
+    <article class="prose">
+      <ContentRenderer v-if="page" :value="page" />
+    </article>
+  </div>
 </template>

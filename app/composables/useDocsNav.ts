@@ -2,6 +2,16 @@ export interface DocsNavItem {
   title: string;
   slug: string;
   versions?: string[];
+  /** ISO date (YYYY-MM-DD) the component was added; shows a "New" badge for NEW_DAYS. */
+  added?: string;
+}
+
+export const NEW_DAYS = 30;
+
+export function isNewItem(added: string | undefined, now: number): boolean {
+  if (!added) return false;
+  const age = now - new Date(`${added}T00:00:00Z`).getTime();
+  return age < NEW_DAYS * 24 * 60 * 60 * 1000;
 }
 
 export interface DocsNavGroup {
@@ -52,7 +62,12 @@ export const DOCS_NAV: DocsNavGroup[] = [
     group: 'Data',
     items: [
       { title: 'Table', slug: 'data/table' },
-      { title: 'File Explorer', slug: 'data/file-explorer', versions: ['v1.4.0'] }
+      {
+        title: 'File Explorer',
+        slug: 'data/file-explorer',
+        versions: ['v1.4.0'],
+        added: '2026-11-19'
+      }
     ]
   },
   {
@@ -83,8 +98,13 @@ export const DOCS_NAV: DocsNavGroup[] = [
     group: 'Navigation',
     items: [
       { title: 'Menu', slug: 'navigation/menu' },
-      { title: 'Context Menu', slug: 'navigation/context-menu', versions: ['v1.4.0'] },
-      { title: 'Tree', slug: 'navigation/tree', versions: ['v1.4.0'] },
+      {
+        title: 'Context Menu',
+        slug: 'navigation/context-menu',
+        versions: ['v1.4.0'],
+        added: '2026-11-19'
+      },
+      { title: 'Tree', slug: 'navigation/tree', versions: ['v1.4.0'], added: '2026-11-19' },
       { title: 'Tabs', slug: 'navigation/tabs' },
       { title: 'Breadcrumb', slug: 'navigation/breadcrumb' },
       { title: 'Stepper', slug: 'navigation/stepper' },
@@ -110,7 +130,7 @@ export const DOCS_NAV: DocsNavGroup[] = [
         slug: 'feedback/tooltip',
         versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0']
       },
-      { title: 'Popover', slug: 'feedback/popover', versions: ['v1.4.0'] },
+      { title: 'Popover', slug: 'feedback/popover', versions: ['v1.4.0'], added: '2026-11-19' },
       { title: 'Scroll To Top', slug: 'feedback/scroll-to-top' },
       { title: 'Loading Indicator', slug: 'feedback/loading-indicator' }
     ]

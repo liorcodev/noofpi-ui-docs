@@ -127,6 +127,7 @@ function switchVersion(v: string) {
                 :class="route.path === item.to ? 'bg-brand-600' : 'bg-transparent'"
               />
               {{ item.title }}
+              <NewBadge :added="item.added" />
             </NuxtLink>
           </li>
         </ul>

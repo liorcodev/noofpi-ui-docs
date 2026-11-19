@@ -5,6 +5,7 @@ const { currentVersion } = useDocsVersion();
 const pages = computed(() =>
   DOCS_NAV.flatMap(g => g.items).map(p => ({
     title: p.title,
+    added: p.added,
     to: `/docs/${currentVersion.value}/${p.slug}`
   }))
 );
@@ -28,8 +29,11 @@ const next = computed(() =>
       <span class="text-xs text-muted flex items-center gap-1.5">
         <Icon name="heroicons:arrow-left" class="text-sm" /> Previous
       </span>
-      <span class="text-sm font-semibold text-ink group-hover:text-accent transition-colors">
+      <span
+        class="flex items-center gap-2 text-sm font-semibold text-ink group-hover:text-accent transition-colors"
+      >
         {{ prev.title }}
+        <NewBadge :added="prev.added" />
       </span>
     </NuxtLink>
     <div v-else class="flex-1" />
@@ -41,8 +45,11 @@ const next = computed(() =>
       <span class="text-xs text-muted flex items-center gap-1.5">
         Next <Icon name="heroicons:arrow-right" class="text-sm" />
       </span>
-      <span class="text-sm font-semibold text-ink group-hover:text-accent transition-colors">
+      <span
+        class="flex items-center gap-2 text-sm font-semibold text-ink group-hover:text-accent transition-colors"
+      >
         {{ next.title }}
+        <NewBadge :added="next.added" />
       </span>
     </NuxtLink>
   </div>
