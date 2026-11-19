@@ -14,6 +14,8 @@ A login, signup or reset form built from a list of `fields`. It uses `NForm`, `N
 
 Pass a Zod `schema` (3 or 4) whose keys match the `name` of the fields. The form validates on submit and shows the first error of each field under it. `submit` carries the parsed data. Without a `schema`, or a `form`, it carries the plain values.
 
+The payload is typed from the `schema`: a handler declared as `(data: z.infer<typeof schema>) => ...` is accepted for `@submit`, and an inline `@submit="(data) => ..."` gets the type without an annotation. Without a `schema`, or with a `form`, the payload is `unknown`.
+
 Field options such as `description`, `help`, `required` and `placeholder` are passed to the `NFormField` and the input.
 
 ::component-example{name="auth-form/signup"}
@@ -71,7 +73,7 @@ With `form`, give its `initial` a key for every field `name`, and its `failure` 
 
 | Event    | Payload      | Description                                                                                  |
 | -------- | ------------ | -------------------------------------------------------------------------------------------- |
-| `submit` | `unknown`    | The parsed data with a `schema`, what `onSubmit` returned with a `form`, or the plain values. |
+| `submit` | `T` `unknown` | The parsed data with a `schema` (typed as its output), what `onSubmit` returned with a `form`, or the plain values. |
 | `error`  | `FormErrors` | Validation failed: the messages of each field by name.                                       |
 
 ### AuthField
