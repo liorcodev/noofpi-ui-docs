@@ -44,7 +44,7 @@ export const DOCS_NAV: DocsNavGroup[] = [
       {
         title: 'Empty State',
         slug: 'components/empty-state',
-        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0']
+        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0']
       }
     ]
   },
@@ -65,7 +65,7 @@ export const DOCS_NAV: DocsNavGroup[] = [
       {
         title: 'File Explorer',
         slug: 'data/file-explorer',
-        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0'],
+        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0'],
         added: '2026-11-19'
       }
     ]
@@ -90,7 +90,7 @@ export const DOCS_NAV: DocsNavGroup[] = [
       {
         title: 'File Upload',
         slug: 'forms/file-upload',
-        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0']
+        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0']
       }
     ]
   },
@@ -101,13 +101,13 @@ export const DOCS_NAV: DocsNavGroup[] = [
       {
         title: 'Context Menu',
         slug: 'navigation/context-menu',
-        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0'],
+        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0'],
         added: '2026-11-19'
       },
       {
         title: 'Tree',
         slug: 'navigation/tree',
-        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0'],
+        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0'],
         added: '2026-11-19'
       },
       { title: 'Tabs', slug: 'navigation/tabs' },
@@ -118,7 +118,7 @@ export const DOCS_NAV: DocsNavGroup[] = [
       {
         title: 'Command Palette',
         slug: 'navigation/command-palette',
-        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0']
+        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0']
       }
     ]
   },
@@ -133,12 +133,12 @@ export const DOCS_NAV: DocsNavGroup[] = [
       {
         title: 'Tooltip',
         slug: 'feedback/tooltip',
-        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0']
+        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0']
       },
       {
         title: 'Popover',
         slug: 'feedback/popover',
-        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0'],
+        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0'],
         added: '2026-11-19'
       },
       { title: 'Scroll To Top', slug: 'feedback/scroll-to-top' },

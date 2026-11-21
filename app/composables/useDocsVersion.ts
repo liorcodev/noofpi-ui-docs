@@ -1,5 +1,6 @@
 // List versions newest-first; the first entry is treated as "latest".
 export const DOCS_VERSIONS = [
+  'v1.6.0',
   'v1.5.0',
   'v1.4.1',
   'v1.4.0',
