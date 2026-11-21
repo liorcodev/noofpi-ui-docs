@@ -26,7 +26,7 @@ An item with `disabled` can't be chosen or focused. With `disabled` on the menu,
 
 ## Links
 
-An item with `to` renders a link instead of a button. `target` is passed on, and `rel="noopener noreferrer"` is added for `_blank`. Use `linkAs` to render the links with a router component such as `NuxtLink`.
+An item with `to` renders a link instead of a button. `target` is passed on, and `rel="noopener noreferrer"` is added for `_blank`. Use `linkAs` to render the links with a router component such as `NoofpiLink`.
 
 ::component-example{name="menu/links" height="240px"}
 ::
@@ -71,7 +71,7 @@ The trigger gets `aria-haspopup` and `aria-expanded`. Arrow keys, `Home` and `En
 | ----------- | ---------------------------------------------------------------- | -------------- | -------------------------------------------------------------------------- |
 | `items`     | `MenuItem[]` `MenuItem[][]`                                      | `[]`           | The items, or groups of items divided by separators.                       |
 | `placement` | `bottom-start` `bottom` `bottom-end` `top-start` `top` `top-end` | `bottom-start` | Where the menu opens, relative to its trigger.                             |
-| `linkAs`    | `string` `Component`                                             | `a`            | The element or component that renders items with `to`, such as `NuxtLink`. |
+| `linkAs`    | `string` `Component`                                             | `a`            | The element or component that renders items with `to`, such as `NoofpiLink`. |
 | `label`     | `string`                                                         | `-`            | The accessible name of the menu.                                           |
 | `disabled`  | `boolean`                                                        | `false`        | Prevents the menu from opening.                                            |
 | `open`      | `boolean`                                                        | `false`        | The open state, bound with `v-model:open`.                                 |

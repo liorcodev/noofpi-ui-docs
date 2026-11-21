@@ -31,10 +31,10 @@ Pass `items`. Each has a `label` and, for a link, a `to`. The last item is the c
 
 ## Router links
 
-Links are plain `a` elements. Set `linkAs` to `RouterLink` or `NuxtLink`, and `to` is passed on to it.
+Links are plain `a` elements. Set `linkAs` to `RouterLink` or `NoofpiLink`, and `to` is passed on to it.
 
 ```vue
-<NBreadcrumb :items="items" :link-as="NuxtLink" />
+<NBreadcrumb :items="items" :link-as="NoofpiLink" />
 ```
 
 ## Accessibility
@@ -48,7 +48,7 @@ It is a `nav` landmark labelled by `label`, with an ordered list inside. The cur
 | Prop            | Type                            | Default                   | Description                                                     |
 | --------------- | ------------------------------- | ------------------------- | --------------------------------------------------------------- |
 | `items`         | `BreadcrumbItem[]`              | `[]`                      | The trail. See below.                                           |
-| `linkAs`        | `string` `Component`            | `a`                       | The component used for links, such as `NuxtLink`.               |
+| `linkAs`        | `string` `Component`            | `a`                       | The component used for links, such as `NoofpiLink`.               |
 | `separatorIcon` | `string`                        | `i-lucide-chevron-right`  | The icon between items.                                         |
 | `maxItems`      | `number`                        | `0`                       | Collapses the middle items above this count. `0` never collapses. |
 | `size`          | `sm` `md` `lg`                  | `md`                      | The text size.                                                  |

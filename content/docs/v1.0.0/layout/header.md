@@ -73,7 +73,7 @@ The navigation is a `nav` named by `navLabel`, and the menu button is named by `
 | `container`    | `boolean`                                              | `true`    | Keeps the content within `--n-header-max-w` and centered.                                |
 | `breakpoint`   | `sm` `md` `lg` `xl`                                    | `md`      | The width from which the navigation replaces the menu button.                            |
 | `navAlign`     | `left` `center` `right`                                | `left`    | Where the navigation sits in the bar.                                                    |
-| `linkAs`       | `string` `Component`                                   | `a`       | The element or component of the links, such as `NuxtLink`, which gets `to` and not `href`. |
+| `linkAs`       | `string` `Component`                                   | `a`       | The element or component of the links, such as `NoofpiLink`, which gets `to` and not `href`. |
 | `navLabel`     | `string`                                               | `"Main"`  | The accessible name of the navigation.                                                   |
 | `menuLabel`    | `string`                                               | `"Menu"`  | The accessible name of the menu button.                                                  |
 | `sidebarLabel` | `string`                                               | `"Sidebar"` | The accessible name of the sidebar button shown inside an `NDashboard`.                |

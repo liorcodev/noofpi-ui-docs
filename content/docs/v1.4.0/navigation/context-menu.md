@@ -29,7 +29,7 @@ With `disabled` the browser's own context menu is kept.
 | Prop       | Type                              | Default | Description                                                          |
 | ---------- | --------------------------------- | ------- | -------------------------------------------------------------------- |
 | `items`    | `MenuItem[]` `MenuItem[][]`       | `[]`    | The items, or groups of items divided by separators.                 |
-| `linkAs`   | `string` `Component`              | `a`     | The element or component that renders items with `to`, such as `NuxtLink`. |
+| `linkAs`   | `string` `Component`              | `a`     | The element or component that renders items with `to`, such as `NoofpiLink`. |
 | `label`    | `string`                          | `-`     | The accessible name of the menu.                                     |
 | `to`       | `string` `HTMLElement` `false`    | `body`  | Teleport target, or `false` to render in place.                      |
 | `disabled` | `boolean`                         | `false` | Keeps the browser's own context menu.                                |

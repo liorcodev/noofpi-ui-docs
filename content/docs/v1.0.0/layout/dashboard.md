@@ -74,7 +74,7 @@ The `header`, default and `footer` slots all get `{ collapsed }` so that you can
 | `border`            | `boolean`            | `true`               | Shows the end border.                                                                |
 | `collapsible`       | `boolean`            | `false`              | Shows a button that collapses the sidebar to a rail of icons.                        |
 | `v-model:collapsed` | `boolean`            | `false`              | The collapsed state, used with `collapsible`.                                        |
-| `linkAs`            | `string` `Component` | `a`                  | The element or component of the links, such as `NuxtLink`, which gets `to` and not `href`. |
+| `linkAs`            | `string` `Component` | `a`                  | The element or component of the links, such as `NoofpiLink`, which gets `to` and not `href`. |
 | `label`             | `string`             | `"Sidebar"`          | The accessible name of the navigation.                                               |
 | `collapseLabel`     | `string`             | `"Collapse sidebar"` | The accessible name of the collapse button.                                          |
 | `expandLabel`       | `string`             | `"Expand sidebar"`   | The accessible name of the expand button.                                            |

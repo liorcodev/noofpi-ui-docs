@@ -59,7 +59,7 @@ Each column is a `nav` named after its `title`. Add an `aria-label` to icon-only
 | `copyrightAlign` | `left` `center` `right` | `left`   | The alignment of the copyright from `28rem`; it is always centered below that.   |
 | `border`         | `boolean`               | `true`   | Shows the top border.                                                            |
 | `container`      | `boolean`               | `true`   | Keeps the content within `--n-footer-max-w` and centered.                        |
-| `linkAs`         | `string` `Component`    | `a`      | The element or component of the links, such as `NuxtLink`, which gets `to` and not `href`. |
+| `linkAs`         | `string` `Component`    | `a`      | The element or component of the links, such as `NoofpiLink`, which gets `to` and not `href`. |
 
 ### Slots
 
