@@ -149,7 +149,7 @@ const stats = [
           to="/docs/installation"
           class="animate-fade-up inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full text-xs font-semibold bg-surface border border-line-strong text-body hover:border-brand-400 transition-colors shadow-sm"
         >
-          <span class="px-2 py-0.5 rounded-full bg-accent-soft text-accent">v1.4.1</span>
+          <span class="px-2 py-0.5 rounded-full bg-accent-soft text-accent">v1.5.0</span>
           Made for noofpi
           <Icon name="heroicons:arrow-right" class="text-accent" />
         </NuxtLink>
