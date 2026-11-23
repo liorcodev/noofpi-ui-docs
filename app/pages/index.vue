@@ -90,7 +90,8 @@ const groups = [
       'Marquee',
       'Carousel',
       'Timeline',
-      'Separator'
+      'Separator',
+      'Empty State'
     ]
   },
   {
@@ -109,11 +110,19 @@ const groups = [
       'Number Input',
       'Pin Input',
       'Checkbox',
+      'Check Button',
       'Toggle Group',
+      'Switch',
+      'Slider',
       'Rating',
+      'Checkbox & Radio Group',
       'Select',
+      'Combobox',
+      'Calendar',
+      'Date Picker',
       'Color Picker',
-      'Auth Form'
+      'Auth Form',
+      'File Upload'
     ]
   },
   {
@@ -124,7 +133,18 @@ const groups = [
   {
     title: 'Navigation',
     to: '/docs/navigation/menu',
-    items: ['Menu', 'Context Menu', 'Tabs', 'Tree', 'Accordion', 'Collapsible']
+    items: [
+      'Menu',
+      'Context Menu',
+      'Tabs',
+      'Tree',
+      'Breadcrumb',
+      'Stepper',
+      'Pagination',
+      'Accordion',
+      'Collapsible',
+      'Command Palette'
+    ]
   },
   {
     title: 'Feedback',
@@ -132,10 +152,13 @@ const groups = [
     items: [
       'Toast',
       'Alert',
+      'Dialog',
+      'Drawer',
       'Tooltip',
       'Popover',
       'Skeleton',
       'Scroll To Top',
+      'Accessibility',
       'Loading Indicator'
     ]
   }

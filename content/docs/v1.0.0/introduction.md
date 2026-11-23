@@ -22,12 +22,12 @@ noofpi-ui is a set of [Tailwind](https://tailwindcss.com) v4 components for [noo
 
 ## Components
 
-- [Components](/docs/components/button): `NButton`, `NBadge`, `NChip`, `NAvatar`, `NUser`, `NProgress`, `NCard`, `NStat`, `NDataList`, `NMarquee`.
-- [Layout](/docs/layout/header): `NPageHeader`, `NHeroPage`, `NHeader`, `NFooter`, `NDashboard`, `NSidebar`.
-- [Data](/docs/data/table): `NTable`.
-- [Forms](/docs/forms/form): `NForm`, `NFormField`, `NInput`, `NNumberInput`, `NPinInput`, `NCheckbox`, `NCheckButton`, `NSwitch`, `NSlider`, `NCheckboxGroup`, `NRadioGroup`, `NSelect`, `NCombobox`, `NAuthForm`.
-- [Navigation](/docs/navigation/menu): `NMenu`, `NTabs`, `NPagination`, `NBreadcrumb`, `NStepper`, `NAccordion`.
-- [Feedback](/docs/feedback/toast): `NToaster` with `toast`, `NAlert`, `NSkeleton`, `NScrollToTop`, `NLoadingIndicator`.
+- [Components](/docs/components/button): `NButton`, `NCopyButton`, `NBadge`, `NChip`, `NAvatar`, `NUser`, `NProgress`, `NCard`, `NStat`, `NDataList`, `NMarquee`, `NCarousel`, `NTimeline`, `NSeparator`, `NEmptyState`.
+- [Layout](/docs/layout/header): `NPageHeader`, `NHeroPage`, `NHeader`, `NFooter`, `NDashboard`, `NSidebar`, `NBlobs`, `NShapes`.
+- [Data](/docs/data/table): `NTable`, `NFileExplorer`.
+- [Forms](/docs/forms/form): `NForm`, `NFormField`, `NInput`, `NTextarea`, `NTagsInput`, `NNumberInput`, `NPinInput`, `NCheckbox`, `NCheckButton`, `NToggleGroup`, `NSwitch`, `NSlider`, `NRating`, `NCheckboxGroup`, `NRadioGroup`, `NSelect`, `NCombobox`, `NCalendar`, `NDatePicker`, `NColorPicker`, `NAuthForm`, `NFileUpload`.
+- [Navigation](/docs/navigation/menu): `NMenu`, `NContextMenu`, `NTree`, `NTabs`, `NBreadcrumb`, `NStepper`, `NPagination`, `NAccordion`, `NCollapsible`, `NCommandPalette`.
+- [Feedback](/docs/feedback/toast): `NToaster` with `toast`, `NAlert`, `NSkeleton`, `NDialog`, `NDrawer`, `NTooltip`, `NPopover`, `NScrollToTop`, `NAccessibility`, `NLoadingIndicator`.
 - [Icons](/docs/icons): `NIcon`.
 
 Start with [Installation](/docs/installation).
