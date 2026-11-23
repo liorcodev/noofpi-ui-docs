@@ -23,7 +23,8 @@ noofpi-ui is a set of [Tailwind](https://tailwindcss.com) v4 components for [noo
 ## Components
 
 - [Components](/docs/components/button): `NButton`, `NCopyButton`, `NBadge`, `NChip`, `NAvatar`, `NUser`, `NProgress`, `NCard`, `NStat`, `NDataList`, `NMarquee`, `NCarousel`, `NTimeline`, `NSeparator`, `NEmptyState`.
-- [Layout](/docs/layout/header): `NPageHeader`, `NHeroPage`, `NHeader`, `NFooter`, `NDashboard`, `NSidebar`, `NBlobs`, `NShapes`.
+- [Layout](/docs/layout/header): `NPageHeader`, `NHeroPage`, `NHeader`, `NFooter`, `NDashboard`, `NSidebar`.
+- [Backgrounds](/docs/backgrounds/blobs): `NBlobs`, `NShapes`.
 - [Data](/docs/data/table): `NTable`, `NFileExplorer`.
 - [Forms](/docs/forms/form): `NForm`, `NFormField`, `NInput`, `NTextarea`, `NTagsInput`, `NNumberInput`, `NPinInput`, `NCheckbox`, `NCheckButton`, `NToggleGroup`, `NSwitch`, `NSlider`, `NRating`, `NCheckboxGroup`, `NRadioGroup`, `NSelect`, `NCombobox`, `NCalendar`, `NDatePicker`, `NColorPicker`, `NAuthForm`, `NFileUpload`.
 - [Navigation](/docs/navigation/menu): `NMenu`, `NContextMenu`, `NTree`, `NTabs`, `NBreadcrumb`, `NStepper`, `NPagination`, `NAccordion`, `NCollapsible`, `NCommandPalette`.

@@ -97,7 +97,12 @@ const groups = [
   {
     title: 'Layout',
     to: '/docs/layout/header',
-    items: ['Page Header', 'Hero Page', 'Header', 'Footer', 'Dashboard', 'Sidebar', 'Backgrounds']
+    items: ['Page Header', 'Hero Page', 'Header', 'Footer', 'Dashboard', 'Sidebar']
+  },
+  {
+    title: 'Backgrounds',
+    to: '/docs/backgrounds/blobs',
+    items: ['Blobs', 'Shapes']
   },
   {
     title: 'Forms',

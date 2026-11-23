@@ -89,10 +89,21 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Hero Page', slug: 'layout/hero-page' },
       { title: 'Header', slug: 'layout/header' },
       { title: 'Footer', slug: 'layout/footer' },
-      { title: 'Dashboard & Sidebar', slug: 'layout/dashboard' },
+      { title: 'Dashboard & Sidebar', slug: 'layout/dashboard' }
+    ]
+  },
+  {
+    group: 'Backgrounds',
+    items: [
       {
-        title: 'Backgrounds',
-        slug: 'layout/backgrounds',
+        title: 'Blobs',
+        slug: 'backgrounds/blobs',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
+      {
+        title: 'Shapes',
+        slug: 'backgrounds/shapes',
         versions: ['v1.8.0'],
         added: '2026-11-23'
       }
