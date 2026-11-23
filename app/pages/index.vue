@@ -78,6 +78,7 @@ const groups = [
     to: '/docs/components/button',
     items: [
       'Button',
+      'Copy Button',
       'Badge',
       'Chip',
       'Avatar',
@@ -86,18 +87,34 @@ const groups = [
       'Card',
       'Stat',
       'Data List',
-      'Marquee'
+      'Marquee',
+      'Carousel',
+      'Timeline',
+      'Separator'
     ]
   },
   {
     title: 'Layout',
     to: '/docs/layout/header',
-    items: ['Page Header', 'Hero Page', 'Header', 'Footer', 'Dashboard', 'Sidebar']
+    items: ['Page Header', 'Hero Page', 'Header', 'Footer', 'Dashboard', 'Sidebar', 'Backgrounds']
   },
   {
     title: 'Forms',
     to: '/docs/forms/form',
-    items: ['Form', 'Input', 'Number Input', 'Pin Input', 'Checkbox', 'Select', 'Auth Form']
+    items: [
+      'Form',
+      'Input',
+      'Textarea',
+      'Tags Input',
+      'Number Input',
+      'Pin Input',
+      'Checkbox',
+      'Toggle Group',
+      'Rating',
+      'Select',
+      'Color Picker',
+      'Auth Form'
+    ]
   },
   {
     title: 'Data',
@@ -107,7 +124,7 @@ const groups = [
   {
     title: 'Navigation',
     to: '/docs/navigation/menu',
-    items: ['Menu', 'Context Menu', 'Tabs', 'Tree', 'Accordion']
+    items: ['Menu', 'Context Menu', 'Tabs', 'Tree', 'Accordion', 'Collapsible']
   },
   {
     title: 'Feedback',
@@ -149,7 +166,7 @@ const stats = [
           to="/docs/installation"
           class="animate-fade-up inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full text-xs font-semibold bg-surface border border-line-strong text-body hover:border-brand-400 transition-colors shadow-sm"
         >
-          <span class="px-2 py-0.5 rounded-full bg-accent-soft text-accent">v1.7.0</span>
+          <span class="px-2 py-0.5 rounded-full bg-accent-soft text-accent">v1.8.0</span>
           Made for noofpi
           <Icon name="heroicons:arrow-right" class="text-accent" />
         </NuxtLink>

@@ -33,6 +33,12 @@ export const DOCS_NAV: DocsNavGroup[] = [
     group: 'Components',
     items: [
       { title: 'Button', slug: 'components/button' },
+      {
+        title: 'Copy Button',
+        slug: 'components/copy-button',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
       { title: 'Badge', slug: 'components/badge' },
       { title: 'Chip', slug: 'components/chip' },
       { title: 'Avatar', slug: 'components/avatar' },
@@ -42,9 +48,37 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Data List', slug: 'components/data-list' },
       { title: 'Marquee', slug: 'components/marquee' },
       {
+        title: 'Carousel',
+        slug: 'components/carousel',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
+      {
+        title: 'Timeline',
+        slug: 'components/timeline',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
+      {
+        title: 'Separator',
+        slug: 'components/separator',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
+      {
         title: 'Empty State',
         slug: 'components/empty-state',
-        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0']
+        versions: [
+          'v1.1.0',
+          'v1.2.0',
+          'v1.3.0',
+          'v1.4.0',
+          'v1.4.1',
+          'v1.5.0',
+          'v1.6.0',
+          'v1.7.0',
+          'v1.8.0'
+        ]
       }
     ]
   },
@@ -55,7 +89,13 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Hero Page', slug: 'layout/hero-page' },
       { title: 'Header', slug: 'layout/header' },
       { title: 'Footer', slug: 'layout/footer' },
-      { title: 'Dashboard & Sidebar', slug: 'layout/dashboard' }
+      { title: 'Dashboard & Sidebar', slug: 'layout/dashboard' },
+      {
+        title: 'Backgrounds',
+        slug: 'layout/backgrounds',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      }
     ]
   },
   {
@@ -65,7 +105,7 @@ export const DOCS_NAV: DocsNavGroup[] = [
       {
         title: 'File Explorer',
         slug: 'data/file-explorer',
-        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0'],
+        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0', 'v1.8.0'],
         added: '2026-11-19'
       }
     ]
@@ -75,22 +115,62 @@ export const DOCS_NAV: DocsNavGroup[] = [
     items: [
       { title: 'Form', slug: 'forms/form' },
       { title: 'Form Field & Input', slug: 'forms/input' },
+      {
+        title: 'Textarea',
+        slug: 'forms/textarea',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
+      {
+        title: 'Tags Input',
+        slug: 'forms/tags-input',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
       { title: 'Number Input', slug: 'forms/number-input' },
       { title: 'Pin Input', slug: 'forms/pin-input' },
       { title: 'Checkbox', slug: 'forms/checkbox' },
       { title: 'Check Button', slug: 'forms/check-button' },
+      {
+        title: 'Toggle Group',
+        slug: 'forms/toggle-group',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
       { title: 'Switch', slug: 'forms/switch' },
       { title: 'Slider', slug: 'forms/slider' },
+      {
+        title: 'Rating',
+        slug: 'forms/rating',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
       { title: 'Checkbox & Radio Group', slug: 'forms/groups' },
       { title: 'Select', slug: 'forms/select' },
       { title: 'Combobox', slug: 'forms/combobox' },
       { title: 'Calendar', slug: 'forms/calendar' },
       { title: 'Date Picker', slug: 'forms/date-picker' },
+      {
+        title: 'Color Picker',
+        slug: 'forms/color-picker',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
       { title: 'Auth Form', slug: 'forms/auth-form' },
       {
         title: 'File Upload',
         slug: 'forms/file-upload',
-        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0']
+        versions: [
+          'v1.1.0',
+          'v1.2.0',
+          'v1.3.0',
+          'v1.4.0',
+          'v1.4.1',
+          'v1.5.0',
+          'v1.6.0',
+          'v1.7.0',
+          'v1.8.0'
+        ]
       }
     ]
   },
@@ -101,13 +181,13 @@ export const DOCS_NAV: DocsNavGroup[] = [
       {
         title: 'Context Menu',
         slug: 'navigation/context-menu',
-        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0'],
+        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0', 'v1.8.0'],
         added: '2026-11-19'
       },
       {
         title: 'Tree',
         slug: 'navigation/tree',
-        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0'],
+        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0', 'v1.8.0'],
         added: '2026-11-19'
       },
       { title: 'Tabs', slug: 'navigation/tabs' },
@@ -116,9 +196,25 @@ export const DOCS_NAV: DocsNavGroup[] = [
       { title: 'Pagination', slug: 'navigation/pagination' },
       { title: 'Accordion', slug: 'navigation/accordion' },
       {
+        title: 'Collapsible',
+        slug: 'navigation/collapsible',
+        versions: ['v1.8.0'],
+        added: '2026-11-23'
+      },
+      {
         title: 'Command Palette',
         slug: 'navigation/command-palette',
-        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0']
+        versions: [
+          'v1.1.0',
+          'v1.2.0',
+          'v1.3.0',
+          'v1.4.0',
+          'v1.4.1',
+          'v1.5.0',
+          'v1.6.0',
+          'v1.7.0',
+          'v1.8.0'
+        ]
       }
     ]
   },
@@ -133,19 +229,29 @@ export const DOCS_NAV: DocsNavGroup[] = [
       {
         title: 'Tooltip',
         slug: 'feedback/tooltip',
-        versions: ['v1.1.0', 'v1.2.0', 'v1.3.0', 'v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0']
+        versions: [
+          'v1.1.0',
+          'v1.2.0',
+          'v1.3.0',
+          'v1.4.0',
+          'v1.4.1',
+          'v1.5.0',
+          'v1.6.0',
+          'v1.7.0',
+          'v1.8.0'
+        ]
       },
       {
         title: 'Popover',
         slug: 'feedback/popover',
-        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0'],
+        versions: ['v1.4.0', 'v1.4.1', 'v1.5.0', 'v1.6.0', 'v1.7.0', 'v1.8.0'],
         added: '2026-11-19'
       },
       { title: 'Scroll To Top', slug: 'feedback/scroll-to-top' },
       {
         title: 'Accessibility',
         slug: 'feedback/accessibility',
-        versions: ['v1.7.0'],
+        versions: ['v1.7.0', 'v1.8.0'],
         added: '2026-11-23'
       },
       { title: 'Loading Indicator', slug: 'feedback/loading-indicator' }
