@@ -104,6 +104,13 @@ function parseSectionId(id: string): { version: string; slug: string } {
   return { version: parts[1] ?? '', slug: parts.slice(2).join('/') };
 }
 
+// Results may come from an older fallback version; always link within the current version
+function resultPath(id: string): string {
+  const { slug } = parseSectionId(id);
+  const hash = id.includes('#') ? `#${id.split('#').slice(1).join('#')}` : '';
+  return `/docs/${currentVersion.value}/${slug}${hash}`;
+}
+
 watch(currentVersion, () => {
   allSections = [];
   fuse = null;
@@ -201,7 +208,7 @@ function onKeydown(e: KeyboardEvent) {
     scrollToSelectedResult();
   }
   if (e.key === 'Enter' && searchResults.value[selectedIndex.value]) {
-    navigateTo(searchResults.value[selectedIndex.value]!.id);
+    navigateTo(resultPath(searchResults.value[selectedIndex.value]!.id));
     closeSearch();
   }
 }
@@ -415,7 +422,7 @@ onMounted(() => {
             <ul v-else class="py-2">
               <li v-for="(result, i) in searchResults" :key="result.id" :data-result-index="i">
                 <NuxtLink
-                  :to="result.id"
+                  :to="resultPath(result.id)"
                   class="w-full text-left px-4 py-3 flex items-start gap-3 transition-colors group"
                   :class="i === selectedIndex ? 'bg-accent-soft' : 'hover:bg-subtle'"
                   @mouseenter="selectedIndex = i"
