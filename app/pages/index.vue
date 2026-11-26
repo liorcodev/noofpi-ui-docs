@@ -91,13 +91,15 @@ const groups = [
       'Carousel',
       'Timeline',
       'Separator',
+      'QR Code',
+      'Chat',
       'Empty State'
     ]
   },
   {
     title: 'Layout',
     to: '/docs/layout/header',
-    items: ['Page Header', 'Hero Page', 'Header', 'Footer', 'Dashboard', 'Sidebar']
+    items: ['Page Header', 'Hero Page', 'Header', 'Footer', 'Dashboard', 'Sidebar', 'Inbox']
   },
   {
     title: 'Backgrounds',
@@ -120,11 +122,13 @@ const groups = [
       'Switch',
       'Slider',
       'Rating',
+      'Field Array',
       'Checkbox & Radio Group',
       'Select',
       'Combobox',
       'Calendar',
       'Date Picker',
+      'Date Time Picker',
       'Color Picker',
       'Auth Form',
       'File Upload'
@@ -133,7 +137,7 @@ const groups = [
   {
     title: 'Data',
     to: '/docs/data/table',
-    items: ['Table', 'File Explorer']
+    items: ['Table', 'File Explorer', 'Kanban', 'Filter Bar', 'Infinite Scroll']
   },
   {
     title: 'Navigation',
@@ -157,6 +161,7 @@ const groups = [
     items: [
       'Toast',
       'Alert',
+      'Banner',
       'Dialog',
       'Drawer',
       'Tooltip',
@@ -194,7 +199,7 @@ const stats = [
           to="/docs/installation"
           class="animate-fade-up inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full text-xs font-semibold bg-surface border border-line-strong text-body hover:border-brand-400 transition-colors shadow-sm"
         >
-          <span class="px-2 py-0.5 rounded-full bg-accent-soft text-accent">v1.8.0</span>
+          <span class="px-2 py-0.5 rounded-full bg-accent-soft text-accent">v1.9.0</span>
           Made for noofpi
           <Icon name="heroicons:arrow-right" class="text-accent" />
         </NuxtLink>

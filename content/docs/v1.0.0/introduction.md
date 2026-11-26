@@ -22,13 +22,13 @@ noofpi-ui is a set of [Tailwind](https://tailwindcss.com) v4 components for [noo
 
 ## Components
 
-- [Components](/docs/components/button): `NButton`, `NCopyButton`, `NBadge`, `NChip`, `NAvatar`, `NUser`, `NProgress`, `NCard`, `NStat`, `NDataList`, `NMarquee`, `NCarousel`, `NTimeline`, `NSeparator`, `NEmptyState`.
-- [Layout](/docs/layout/header): `NPageHeader`, `NHeroPage`, `NHeader`, `NFooter`, `NDashboard`, `NSidebar`.
+- [Components](/docs/components/button): `NButton`, `NCopyButton`, `NBadge`, `NChip`, `NAvatar`, `NUser`, `NProgress`, `NCard`, `NStat`, `NDataList`, `NMarquee`, `NCarousel`, `NTimeline`, `NSeparator`, `NQRCode`, `NChat`, `NEmptyState`.
+- [Layout](/docs/layout/header): `NPageHeader`, `NHeroPage`, `NHeader`, `NFooter`, `NDashboard`, `NSidebar`, `NInbox`.
 - [Backgrounds](/docs/backgrounds/blobs): `NBlobs`, `NShapes`.
-- [Data](/docs/data/table): `NTable`, `NFileExplorer`.
-- [Forms](/docs/forms/form): `NForm`, `NFormField`, `NInput`, `NTextarea`, `NTagsInput`, `NNumberInput`, `NPinInput`, `NCheckbox`, `NCheckButton`, `NToggleGroup`, `NSwitch`, `NSlider`, `NRating`, `NCheckboxGroup`, `NRadioGroup`, `NSelect`, `NCombobox`, `NCalendar`, `NDatePicker`, `NColorPicker`, `NAuthForm`, `NFileUpload`.
+- [Data](/docs/data/table): `NTable`, `NFileExplorer`, `NKanban`, `NFilterBar`, `NInfiniteScroll`.
+- [Forms](/docs/forms/form): `NForm`, `NFormField`, `NInput`, `NTextarea`, `NTagsInput`, `NNumberInput`, `NPinInput`, `NCheckbox`, `NCheckButton`, `NToggleGroup`, `NSwitch`, `NSlider`, `NRating`, `NFieldArray`, `NCheckboxGroup`, `NRadioGroup`, `NSelect`, `NCombobox`, `NCalendar`, `NDatePicker`, `NDateTimePicker`, `NColorPicker`, `NAuthForm`, `NFileUpload`.
 - [Navigation](/docs/navigation/menu): `NMenu`, `NContextMenu`, `NTree`, `NTabs`, `NBreadcrumb`, `NStepper`, `NPagination`, `NAccordion`, `NCollapsible`, `NCommandPalette`.
-- [Feedback](/docs/feedback/toast): `NToaster` with `toast`, `NAlert`, `NSkeleton`, `NDialog`, `NDrawer`, `NTooltip`, `NPopover`, `NScrollToTop`, `NAccessibility`, `NLoadingIndicator`.
+- [Feedback](/docs/feedback/toast): `NToaster` with `toast`, `NAlert`, `NBanner`, `NSkeleton`, `NDialog`, `NDrawer`, `NTooltip`, `NPopover`, `NScrollToTop`, `NAccessibility`, `NLoadingIndicator`.
 - [Icons](/docs/icons): `NIcon`.
 
 Start with [Installation](/docs/installation).
