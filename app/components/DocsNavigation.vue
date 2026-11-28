@@ -3,11 +3,13 @@ const route = useRoute();
 const { currentVersion } = useDocsVersion();
 
 const pages = computed(() =>
-  DOCS_NAV.flatMap(g => g.items).map(p => ({
-    title: p.title,
-    added: p.added,
-    to: `/docs/${currentVersion.value}/${p.slug}`
-  }))
+  DOCS_NAV.flatMap(g => g.items)
+    .filter(p => isItemAvailable(p, currentVersion.value))
+    .map(p => ({
+      title: p.title,
+      added: p.added,
+      to: `/docs/${currentVersion.value}/${p.slug}`
+    }))
 );
 
 const currentIndex = computed(() => pages.value.findIndex(p => p.to === route.path));

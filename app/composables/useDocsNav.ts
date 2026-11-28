@@ -1,9 +1,25 @@
+import { DOCS_VERSIONS } from './useDocsVersion';
+
 export interface DocsNavItem {
   title: string;
   slug: string;
   versions?: string[];
   /** ISO date (YYYY-MM-DD) the component was added; shows a "New" badge for NEW_DAYS. */
   added?: string;
+}
+
+/**
+ * An item with `versions` is available in every listed version and in any
+ * version released after the newest listed one (so new releases inherit it).
+ */
+export function isItemAvailable(item: DocsNavItem | undefined, version: string): boolean {
+  if (!item?.versions?.length) return true;
+  if (item.versions.includes(version)) return true;
+  const order = DOCS_VERSIONS as readonly string[];
+  const idx = order.indexOf(version);
+  if (idx === -1) return false;
+  const newestListed = Math.min(...item.versions.map(v => order.indexOf(v)).filter(i => i !== -1));
+  return idx < newestListed;
 }
 
 export const NEW_DAYS = 30;

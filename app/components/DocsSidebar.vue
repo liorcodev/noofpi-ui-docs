@@ -8,7 +8,7 @@ const navigation = computed(() =>
   DOCS_NAV.map(section => ({
     ...section,
     items: section.items
-      .filter(item => !item.versions || item.versions.includes(currentVersion.value))
+      .filter(item => isItemAvailable(item, currentVersion.value))
       .map(item => ({
         ...item,
         to: `/docs/${currentVersion.value}/${item.slug}`
@@ -26,7 +26,7 @@ function switchVersion(v: string) {
   const item = DOCS_NAV.flatMap(section => section.items).find(
     candidate => candidate.slug === pagePath
   );
-  const available = !item?.versions || item.versions.includes(v);
+  const available = isItemAvailable(item, v);
   navigateTo(`/docs/${v}/${available ? pagePath || 'introduction' : 'introduction'}`);
 }
 </script>
